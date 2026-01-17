@@ -80,11 +80,11 @@ Scope {
           }
           Rectangle {
             height: parent.height
-            width: 50
+            width: 60
 
             Text {
               anchors.centerIn: parent
-              text: { return UPower.devices.values.length; }
+              text: { return Math.round(UPower.displayDevice.percentage * 100) + "%"; }
             }
           }
         }
