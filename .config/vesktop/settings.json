@@ -5,5 +5,10 @@
     "splashTheming": true,
     "splashColor": "rgb(220, 220, 223)",
     "splashBackground": "rgb(44, 45, 50)",
-    "arRPC": true
+    "arRPC": true,
+    "spellCheckLanguages": [
+        "es-419",
+        "es-MX",
+        "es"
+    ]
 }
