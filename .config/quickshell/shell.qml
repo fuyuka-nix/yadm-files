@@ -1,7 +1,8 @@
+import "modules"
+import "modules/bar"
 import Quickshell
 
-Scope {
+ShellRoot {
   Bar {}
-  Logout {}
 }
 
