@@ -2,6 +2,6 @@
 
 tmpfolder=$(mktemp -d)
 
-nix eval -f default.nix --write-to ~/out
-cp -a ~/out/. ~/
-rm -r ~/out
+nix eval -f ~/.config/dynamix/default.nix --write-to $tmpfolder/out
+cp -a $tmpfolder/out/. ~/
+rm -r $tmpfolder
