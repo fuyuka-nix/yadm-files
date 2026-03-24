@@ -10,18 +10,22 @@
             "enableEmojiBypass": true,
             "transformEmojis": true,
             "transformStickers": true,
-            "transformCompoundSentence": false
+            "transformCompoundSentence": false,
+            "emojiSize": 48,
+            "hyperLinkText": "{{NAME}}",
+            "useHyperLinks": true,
+            "disableEmbedPermissionCheck": false
         },
         "MessageLogger": {
             "enabled": true,
-            "collapseDeleted": false,
+            "collapseDeleted": true,
             "deleteStyle": "text",
-            "ignoreBots": false,
-            "ignoreSelf": false,
+            "ignoreBots": true,
+            "ignoreSelf": true,
             "ignoreUsers": "",
             "ignoreChannels": "",
             "ignoreGuilds": "",
-            "logEdits": true,
+            "logEdits": false,
             "logDeletes": true,
             "inlineEdits": true
         },
@@ -47,7 +51,7 @@
             "enabled": true
         },
         "MessagePopoverAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessageUpdaterAPI": {
             "enabled": true
@@ -59,10 +63,10 @@
             "enabled": true
         },
         "AccountPanelServerProfile": {
-            "enabled": false
+            "enabled": true
         },
         "AlwaysAnimate": {
-            "enabled": false
+            "enabled": true
         },
         "AlwaysExpandRoles": {
             "enabled": false
@@ -233,7 +237,7 @@
             "enabled": false
         },
         "ImageLink": {
-            "enabled": false
+            "enabled": true
         },
         "ImageZoom": {
             "enabled": false
@@ -263,10 +267,10 @@
             "enabled": false
         },
         "MessageLatency": {
-            "enabled": false
+            "enabled": true
         },
         "MessageLinkEmbeds": {
-            "enabled": false
+            "enabled": true
         },
         "MutualGroupDMs": {
             "enabled": false
@@ -359,7 +363,7 @@
             "enabled": false
         },
         "QuickReply": {
-            "enabled": false
+            "enabled": true
         },
         "ReactErrorDecoder": {
             "enabled": false
@@ -374,7 +378,7 @@
             "enabled": false
         },
         "ReplyTimestamp": {
-            "enabled": false
+            "enabled": true
         },
         "RevealAllSpoilers": {
             "enabled": false
@@ -425,7 +429,9 @@
             "enabled": false
         },
         "SilentMessageToggle": {
-            "enabled": false
+            "enabled": false,
+            "persistState": false,
+            "autoDisable": true
         },
         "SilentTyping": {
             "enabled": false
@@ -494,7 +500,7 @@
             "enabled": false
         },
         "VoiceChatDoubleClick": {
-            "enabled": false
+            "enabled": true
         },
         "VcNarrator": {
             "enabled": false
@@ -506,7 +512,7 @@
             "enabled": false
         },
         "ViewRaw": {
-            "enabled": false
+            "enabled": true
         },
         "VoiceDownload": {
             "enabled": false
@@ -530,7 +536,7 @@
             "enabled": false
         },
         "YoutubeAdblock": {
-            "enabled": false
+            "enabled": true
         },
         "BadgeAPI": {
             "enabled": true
@@ -557,6 +563,9 @@
         },
         "CustomCommands": {
             "enabled": false
+        },
+        "NoDefaultHangStatus": {
+            "enabled": false
         }
     },
     "useQuickCss": true,
@@ -582,6 +591,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773490721946
+        "settingsSyncVersion": 1774279576925
     }
 }
