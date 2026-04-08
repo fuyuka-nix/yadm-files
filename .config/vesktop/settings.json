@@ -3,8 +3,8 @@
     "minimizeToTray": false,
     "tray": false,
     "splashTheming": true,
-    "splashColor": "rgb(243, 243, 244)",
-    "splashBackground": "rgb(44, 45, 50)",
+    "splashColor": "rgb(239, 239, 241)",
+    "splashBackground": "rgb(18, 18, 20)",
     "arRPC": true,
     "spellCheckLanguages": [
         "es-419",
