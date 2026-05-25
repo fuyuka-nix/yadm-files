@@ -17,7 +17,7 @@
 
 hl.bind("SUPER + C", hl.dsp.window.close())
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
-hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
+hl.bind("SUPER + R", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind("SUPER + Q", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + ALT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
