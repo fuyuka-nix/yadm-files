@@ -16,18 +16,25 @@
 --end
 
 hl.bind("SUPER + C", hl.dsp.window.close())
+hl.bind("SUPER + SHIFT + C", hl.dsp.window.kill())
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind("SUPER + R", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind("SUPER + Q", hl.dsp.exec_cmd("hyprlock"))
-hl.bind("SUPER + ALT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind("SUPER + ALT + M", hl.dsp.exec_cmd("uwsm stop"))
 
 hl.bind("SUPER + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + N", hl.dsp.layout("togglesplit"))
+hl.bind("SUPER + SHIFT + P", hl.dsp.window.pin())
 
 hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
 hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
 hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
 hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
+
+hl.bind("SUPER + SHIFT + H", hl.dsp.window.swap({ direction = "left" }))
+hl.bind("SUPER + SHIFT + J", hl.dsp.window.swap({ direction = "down" }))
+hl.bind("SUPER + SHIFT + K", hl.dsp.window.swap({ direction = "up" }))
+hl.bind("SUPER + SHIFT + L", hl.dsp.window.swap({ direction = "right" }))
 
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
@@ -52,7 +59,6 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-
 
 -- submaps
 hl.bind("SUPER + SHIFT + S", hl.dsp.submap("screenshot"))
