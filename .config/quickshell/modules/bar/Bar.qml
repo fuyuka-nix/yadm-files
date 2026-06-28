@@ -85,7 +85,7 @@ Scope {
               anchors.centerIn: parent
               color: Styles.colors.b00
 
-              text: "Fuyuka.nix"
+              text: "frozenfox"
             }
           }
           Rectangle {
