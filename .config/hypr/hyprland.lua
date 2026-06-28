@@ -14,8 +14,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("hyprsunset")
     hl.exec_cmd("joplin-desktop", { workspace = 2 })
     hl.exec_cmd("thunderbird", { workspace = 3 })
-    hl.exec_cmd("librewolf", { workspace = 8 })
-    hl.exec_cmd("simplex-chat-desktop", { workspace = 9 })
 end)
 
 hl.config({

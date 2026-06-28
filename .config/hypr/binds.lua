@@ -18,6 +18,7 @@
 hl.bind("SUPER + C", hl.dsp.window.close())
 hl.bind("SUPER + SHIFT + C", hl.dsp.window.kill())
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
+hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty --detach -1 nvim $HOME/mysystem; kitty --detach -1 $HOME/mysystem"))
 hl.bind("SUPER + R", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind("SUPER + Q", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + ALT + M", hl.dsp.exec_cmd("uwsm stop"))
