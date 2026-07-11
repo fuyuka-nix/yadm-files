@@ -3,7 +3,7 @@ require("binds")
 
 hl.monitor({
     output = "eDP-1",
-    mode = "1920x1080@60",
+    mode = "1920x1200@60",
     position = "0x0",
     scale = 1
 })
@@ -75,22 +75,32 @@ hl.config({
 })
 
 hl.config({
-    input = {
-        kb_layout  = "latam",
- --       kb_variant = "",
- --       kb_model   = "",
- --       kb_options = "",
- --       kb_rules   = "",
+  input = {
+    kb_layout  = "latam",
+--       kb_variant = "",
+--       kb_model   = "",
+--       kb_options = "",
+--       kb_rules   = "",
 
-        follow_mouse = 1,
+    follow_mouse = 1,
+    scroll_method = "edge",
 
-        sensitivity = 1.0,
-	scroll_method = "edge",
+    touchpad = {
+      middle_button_emulation = true,
+      natural_scroll = true,
+      scroll_factor = 0.8,
+    }
+  },
+})
 
-        touchpad = {
-            natural_scroll = true,
-        }
-    },
+hl.device({
+  name = "syna8022:00-06cb:ce67-touchpad",
+  sensitivity = 0.6,
+})
+
+hl.device({
+  name = "tpps/2-synaptics-trackpoint",
+  scroll_factor = 0.5,
 })
 
 
